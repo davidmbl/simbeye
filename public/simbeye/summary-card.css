@@ -1,0 +1,92 @@
+    :root {
+        --dark-green: #10351a;
+        --light-green: #256c38;
+        --highlight-green: #569c69;
+        --light-color: #dff8e6;
+        --light-color-2: #f7f7f7;
+        --dark-color: #10351a6e;
+    }
+
+    .summaryCard {
+        --primary-clr: linear-gradient(to right, var(--dark-green), var(--light-green));
+        --dot-clr: var(--highlight-green);
+        --play: var(--highlight-green);
+        width: auto;
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    .summaryCard {
+        font-family: "Arial";
+        color: #fff;
+        display: grid;
+        cursor: pointer;
+        grid-template-rows: 50px 1fr;
+    }
+
+    .summaryCard:hover .img-section {
+        transform: translateY(0.2em);
+    }
+
+    .summaryCard-desc {
+        border-radius: 10px;
+        padding: 15px;
+        position: relative;
+        top: -10px;
+        display: grid;
+        gap: 10px;
+        background: var(--primary-clr);
+    }
+
+    .summaryCard-time {
+        font-size: 1.9em;
+        font-weight: 500;
+    }
+
+    .img-section {
+        transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background: var(--highlight-green);
+    }
+
+    .summaryCard-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .summaryCard-title {
+        flex: 1;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .summaryCard-menu {
+        display: flex;
+        gap: 4px;
+        margin-inline: auto;
+    }
+
+    .summaryCard svg {
+        float: right;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .summaryCard .dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--highlight-green);
+    }
+
+    .summaryCard .recent {
+        line-height: 0;
+        font-size: 0.7em;
+        color: var(--light-color);
+    }
+
+    .summaryCardIcon {
+        fill: var(--dark-green)
+    }

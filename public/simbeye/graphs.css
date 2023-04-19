@@ -1,0 +1,8 @@
+:root {
+    --graph-light-color: #ffffff;
+    --graph-light-color-2: #ffffff;
+}
+
+.graphCard{
+    background: linear-gradient(to top, var(--graph-light-color), var(--graph-light-color-2));
+}
